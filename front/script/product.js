@@ -2,7 +2,7 @@
 const productId = new URLSearchParams(window.location.search).get("id");
 console.log(productId);
 
-// Si on a bien récupéré un id on récupère les données de l'API correspondant à cet id
+// Si id = true, on récupère les données de l'API correspondant à cet id
 if (productId !== null){
 fetch(`http://localhost:3000/api/products/${productId}`)
   .then(response => response.json())
@@ -63,7 +63,7 @@ fetch(`http://localhost:3000/api/products/${productId}`)
                 }
                 console.log(optionsProduct);
                 //-------------------------------Le Local Storage--------------------------------------------
-                // On cré une variable pour afficher un message lors de l'ajout d'1 produit dans le localStorage
+                // On créé une variable pour afficher un message lors de l'ajout d'1 produit dans le localStorage
                 let messageLocalStorageUpdating = false;
                 //Fonction ajouter dans le localStorage un produit sélectionné par l'utilisatueur, avec ses options (id, couleur, quantité)
                 const addProductLocalStorage = () => {
