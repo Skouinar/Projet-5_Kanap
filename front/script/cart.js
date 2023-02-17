@@ -147,7 +147,6 @@ function deleteProduct() {
                 
                 //Alerte produit supprimé
                 alert("Ce produit va être supprimé du panier.");
-                 
                 
                 // On supprime physiquement la balise <article> du produit que l'on supprime depuis son parent, si elle existe
                 if (myArticle.parentNode) {
